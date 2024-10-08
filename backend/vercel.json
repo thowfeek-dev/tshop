@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name":"t-shop",
+    "name":"e-shop-tutorial",
     "builds":[
         {"src":"server.js","use":"@vercel/node"}
     ],
