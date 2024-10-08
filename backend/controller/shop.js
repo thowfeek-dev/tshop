@@ -39,7 +39,7 @@ router.post(
             };
 
             const activationToken = createActivationToken(seller);
-
+            //const activationUrl = `http://localhost:3000/seller/activation/${activationToken}`;
             const activationUrl = `https://tshop-przo.vercel.app/seller/activation/${activationToken}`;
 
             try {
