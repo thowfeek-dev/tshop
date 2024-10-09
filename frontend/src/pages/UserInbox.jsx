@@ -9,8 +9,8 @@ import { useNavigate } from "react-router-dom";
 import { AiOutlineArrowRight, AiOutlineSend } from "react-icons/ai";
 import { TfiGallery } from "react-icons/tfi";
 import styles from "../styles/styles";
-const isDevelopment = process.env.NODE_ENV === "DEVELOPMENT";
-const ENDPOINT = isDevelopment ? "http://localhost:4000" : "https://socket-render.onrender.com";
+const isDevelopment = process.env.NODE_ENV === "development";
+const ENDPOINT = isDevelopment ? "http://localhost:4000/" : "https://socket-render.onrender.com/"
 const socketId = socketIO(ENDPOINT, { transports: ["websocket"] });
 
 const UserInbox = () => {

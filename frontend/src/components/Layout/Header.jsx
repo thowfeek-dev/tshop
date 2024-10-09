@@ -15,7 +15,7 @@ import Navbar from "./Navbar";
 import { useSelector } from "react-redux";
 import Cart from "../cart/Cart";
 import Wishlist from "../Wishlist/Wishlist";
-import { RxCross1 } from "react-icons/rx";
+import { RxCross1 } from "react-icons
 
 const Header = ({ activeHeading }) => {
   const { isAuthenticated, user } = useSelector((state) => state.user);
@@ -59,7 +59,7 @@ const Header = ({ activeHeading }) => {
             <Link to="/">
               <img
                 src="https://shopo.quomodothemes.website/assets/images/logo.svg"
-                alt=""
+                alt="1"
               />
             </Link>
           </div>
@@ -110,7 +110,7 @@ const Header = ({ activeHeading }) => {
       <div
         className={`${
           active === true ? "shadow-sm fixed top-0 left-0 z-10" : null
-        } transition hidden 800px:flex items-center justify-between w-full bg-[#3321c8] h-[70px]`}
+        } transition hidden 800px:flex items-center justify-between w-full bg-[#112D4E] h-[70px]`}
       >
         <div
           className={`${styles.section} relative ${styles.noramlFlex} justify-between`}

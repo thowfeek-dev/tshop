@@ -9,8 +9,8 @@ import styles from "../../styles/styles";
 import { TfiGallery } from "react-icons/tfi";
 import socketIO from "socket.io-client";
 import { format } from "timeago.js";
-const isDevelopment = process.env.NODE_ENV === "DEVELOPMENT";
-const ENDPOINT = isDevelopment ? "http://localhost:4000" : "https://socket-render.onrender.com";
+const isDevelopment = process.env.NODE_ENV === "development";
+const ENDPOINT = isDevelopment ? "http://localhost:4000/" : "https://socket-render.onrender.com/"
 const socketId = socketIO(ENDPOINT, { transports: ["websocket"] });
 
 const DashboardMessages = () => {
