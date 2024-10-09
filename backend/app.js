@@ -4,13 +4,10 @@ const app = express();
 const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-
-// app.use(cors({
-//   origin: 'http://localhost:3000',
-//   credentials: true
-// }));
+require('dotenv').config({ path: './config/.env' });
+const isDevelopment = process.env.NODE_ENV?.toLowerCase() === "development";
 app.use(cors({
-  origin: 'https://tshop-przo.vercel.app',
+  origin: isDevelopment ? 'http://localhost:3000' : 'https://tshop-przo.vercel.app',
   credentials: true
 }));
 

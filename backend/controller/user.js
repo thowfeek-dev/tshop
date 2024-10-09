@@ -34,8 +34,9 @@ router.post("/create-user", async (req, res, next) => {
         };
 
         const activationToken = createActivationToken(user);
+        const isDevelopment = process.env.NODE_ENV === "DEVELOPMENT";
         //const activationUrl = `http://localhost:3000/activation/${activationToken}`;
-        const activationUrl = `https://tshop-przo.vercel.app/activation/${activationToken}`;
+        const activationUrl = isDevelopment ? `http://localhost:3000/activation/${activationToken}` : `https://tshop-przo.vercel.app/activation/${activationToken}`;
 
         try {
             await sendMail({

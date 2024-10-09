@@ -39,8 +39,9 @@ router.post(
             };
 
             const activationToken = createActivationToken(seller);
+            const isDevelopment = process.env.NODE_ENV === "DEVELOPMENT";
             //const activationUrl = `http://localhost:3000/seller/activation/${activationToken}`;
-            const activationUrl = `https://tshop-przo.vercel.app/seller/activation/${activationToken}`;
+            const activationUrl = isDevelopment ? `http://localhost:3000/seller/activation/${activationToken}` : `https://tshop-przo.vercel.app/seller/activation/${activationToken}`;
 
             try {
                 await sendMail({
