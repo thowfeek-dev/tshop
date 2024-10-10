@@ -163,7 +163,7 @@ router.put(
 
       await Order.findByIdAndUpdate(
         orderId,
-        { $set: { "cart.$[elem].isReviewed": true } },
+        { $set: { "cart.₹[elem].isReviewed": true } },
         { arrayFilters: [{ "elem._id": productId }], new: true }
       );
 
