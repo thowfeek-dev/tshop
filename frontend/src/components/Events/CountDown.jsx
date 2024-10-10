@@ -52,12 +52,14 @@ const CountDown = ({ data }) => {
   return (
     <div>
       {timerComponents.length ? (
-        timerComponents
+        timerComponents.map((component, index) => (
+          <span key={index}>{component}</span>
+        ))
       ) : (
         <span className="text-[red] text-[25px]">Time's Up</span>
       )}
     </div>
-  );
+  );  
 };
 
 export default CountDown;
