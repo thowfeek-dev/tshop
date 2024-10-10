@@ -229,13 +229,13 @@ export const navItems = [
       title: "Gifts",
       subTitle: "",
       image_Url:
-        "https://securecdn.pymnts.com/wp-content/uploads/2014/11/Gifts-Photo-700x489.jpg",
+        "https://corporategiftsbyconfetti.in/cdn/shop/files/8_ea239095-f9d7-4452-b5ba-52a34762ccd6.png?v=1713181083",
     },
     {
       id: 7,
       title: "Pet Care",
       subTitle: "",
-      image_Url: "https://cdn.openpr.com/T/c/Tc15444071_g.jpg",
+      image_Url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxEY4vvQTCnQ6qFF3xOp7swPiz2EmaJ_Lltw&s",
     },
     {
       id: 8,
